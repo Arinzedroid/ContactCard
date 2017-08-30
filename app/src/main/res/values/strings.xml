@@ -2,5 +2,6 @@
     <string name="app_name">Contact Card</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="Bio">I am a professional software engineer with 5 years of experience in design and app development. My skills and experience includes web, mobile and desktop app developments with database. I work a range of businesses including start ups, agencies, established brands and entrepreneurs around the globe.</string>
     <string name="action_settings">Settings</string>
 </resources>
