@@ -39,6 +39,7 @@
         <ImageView
             android:layout_width="45dp"
             android:layout_height="45dp"
+            android:id="@+id/mail"
             android:background="@drawable/gmail_icon"
             android:layout_gravity="center"/>
         <TextView
@@ -48,6 +49,7 @@
             android:background="#07000000" />
         <ImageView
             android:layout_width="45dp"
+            android:id="@+id/slack"
             android:layout_height="45dp"
             android:background="@drawable/slack_icon"
             android:layout_gravity="center"/>
@@ -58,6 +60,7 @@
             android:background="#07000000" />
         <ImageView
             android:layout_width="45dp"
+            android:id="@+id/git"
             android:layout_height="45dp"
             android:background="@drawable/github"
             android:layout_gravity="center"/>
