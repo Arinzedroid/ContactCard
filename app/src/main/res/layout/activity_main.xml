@@ -35,6 +35,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#07000000" />
 
         <ImageView
             android:layout_width="45dp"
@@ -42,17 +47,7 @@
             android:id="@+id/mail"
             android:background="@drawable/gmail_icon"
             android:layout_gravity="center"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#07000000" />
-        <ImageView
-            android:layout_width="45dp"
-            android:id="@+id/slack"
-            android:layout_height="45dp"
-            android:background="@drawable/slack_icon"
-            android:layout_gravity="center"/>
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -64,6 +59,11 @@
             android:layout_height="45dp"
             android:background="@drawable/github"
             android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#07000000" />
 
     </LinearLayout>
 

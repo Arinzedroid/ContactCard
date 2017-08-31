@@ -1,6 +1,8 @@
 package com.hngintern.arinze.contactcard;
 
+import android.content.Intent;
 import android.media.Image;
+import android.net.Uri;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,7 +15,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView git,slack,mail;
+    ImageView git,mail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,14 +25,20 @@ public class MainActivity extends AppCompatActivity {
         bio.setMovementMethod(new ScrollingMovementMethod());
         mail = (ImageView)findViewById(R.id.mail);
         git = (ImageView)findViewById(R.id.git);
-        slack = (ImageView)findViewById(R.id.slack);
         mail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showMarkerDetails("");
-
+               startActivity(new Intent(getBaseContext(),EmailActivity.class));
             }
         });
+        git.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Arinze39/hng_stage_1"));
+                startActivity(browserIntent);
+            }
+        });
+
     }
 
     public void showMarkerDetails(String Title) {
